@@ -3,8 +3,7 @@
 #                                                                                 #
 #  This script updates existing feature layers on AGOL by replacing the           #
 #  associated service definition file with one newly generated from locally       #
-#  hosted data. In particular, this script updates PUBLIC FACING DATASETS. See    #
-#  separate script for datasets shared only within the organization.              #
+#  hosted data.                                                                   #
 #                                                                                 #
 #  If this script is to run successfully, certain parameters must be met prior    #
 #  to its execution. For complete documentation of the workflow, visit:           #
@@ -22,13 +21,13 @@ from arcgis.gis import GIS
 ############################ BEGIN ASSIGNING VARIABLES ############################
 
 # Set the path to the project
-prjFolder = r"C:\Users\bg21460\Google Drive\Parks and Conservation\Scripts-Tools\Weekly updates\3-Overwrite web layers\WeeklyUpdates_PUBLIC"
-prjPath = os.path.join(prjFolder, "WeeklyUpdates_PUBLIC.aprx")
+prjFolder = r"C:\WeeklyUpdates"
+prjPath = os.path.join(prjFolder, "WeeklyUpdates.aprx")
 
 # Set login credentials (user name is case sensitive, fyi)
 portal = "https://www.arcgis.com/"
-user = "Rachel.Schultz"
-password = "ErVXHm2k$87FAeY3"
+user = # Your ArcGIS Online user name
+password = # Probably not "password"
 
 ############################# END ASSIGNING VARIABLES #############################
 
