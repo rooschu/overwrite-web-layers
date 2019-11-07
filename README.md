@@ -11,7 +11,9 @@ Schema changes to the published data feature class should not cause any issue wi
 - Python 3.X
 - An ArcGIS Online account with an associated ArcGIS Pro license
 ## Instructions
+#### Publish the feature to AGOL manually the first time
 1. Create an ArcGIS Pro project dedicated to running this script. Take note of the project name (e.g. `WeeklyUpdates.aprx`) and the folder in which your project is saved (e.g. `C:\ArcGIS\Projects\WeeklyUpdates`)
 2. Create a new map in your project and add **only one** feature class to the map.
 3. Rename the map with a title that describes the feature class contained within it and **does not contain spaces** (e.g. `TN_Sate_Park_Boundaries`).
-Right-click on the feature class in the Contents pane and choose *Sharing* -> *Share as Web Layer*. Fill out the tool parameters and hit *Publish*. Give 'er a minute.
+4. Right-click on the feature class in the Contents pane and choose *Sharing* -> *Share as Web Layer*. Fill out the tool parameters and hit *Publish*. Give 'er a minute.
+5. 
