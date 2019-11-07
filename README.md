@@ -1,3 +1,5 @@
+# OverwriteWebLayers.py
+Automate the overwriting of ArcGIS Online web layers/service definitions from local feature classes using ArcGIS Pro, arcpy, and the ArcGIS API for Python.
 ## Overview
 The script connects to ArcGIS.com (using credentials stored locally—*yeah, yeah, I know*) and populates a Python dictionary object with a list of **map objects** and corresponding **map names** found within a referenced ArcGIS Pro Project. Next, the script searches for service definitions owned by the user whose credentials are input and populates a second Python dictionary with a list of **service names** and **service IDs**. Finally, the script **iterates through** the two dictionaries and, where a map name matches a service name, stages a temporary service file and uses this to **replace the service definition** on ArcGIS Online, updating the AGOL data with new data from your local storage.
 
@@ -8,3 +10,8 @@ Schema changes to the published data feature class should not cause any issue wi
 - ArcGIS Pro
 - Python 3.X
 - An ArcGIS Online account with an associated ArcGIS Pro license
+## Instructions
+1. Create an ArcGIS Pro project dedicated to running this script. Take note of the project name (e.g. `WeeklyUpdates.aprx`) and the folder in which your project is saved (e.g. `C:\ArcGIS\Projects\WeeklyUpdates`)
+2. Create a new map in your project and add **only one** feature class to the map.
+3. Rename the map with a title that describes the feature class contained within it and **does not contain spaces** (e.g. `TN_Sate_Park_Boundaries`).
+Right-click on the feature class in the Contents pane and choose 
