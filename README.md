@@ -20,7 +20,7 @@ Schema changes to the published data feature class should not cause any issue wi
 
 You've now created a feature layer and corresponding service definition (whose name should match the name of your map) in AGOL. You can repeat steps 2-5 for any number of feature classes you wish to publish to AGOL. The script will iterate through every map contained in your project file and try to match it to an AGOL service definition.
 #### Update Python script parameters
-This script is pretty clear about where parameters needs to reflect your own set up, and there aren't many to change. See below.
+This script is pretty clear about where parameters needs to reflect your own set-up, and there aren't many to change. See below.
 ```
 ############################ BEGIN ASSIGNING VARIABLES ############################
 
@@ -43,3 +43,7 @@ shrGroups = # Leave blank (" ") or list 'em
 #### Run the script
 1. Run the script through your favorite IDE using Python 3.X (which comes with your Pro installation)
 2. Set up the script to run periodically in Task Scheduler or equivalent, based on how often your local copies are edited
+## Credits
+This script was adapted from [Updating your hosted feature services with ArcGIS Pro and the ArcGIS API for Python](https://www.esri.com/arcgis-blog/products/api-python/analytics/updating-your-hosted-feature-services-with-arcgis-pro-and-the-arcgis-api-for-python/), an ArcGIS blog post by Kevin Hibma.
+
+I found that using the search method on the ContentManagement 
