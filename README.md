@@ -46,4 +46,4 @@ shrGroups = # Leave blank (" ") or list 'em
 ## Credits
 This script was adapted from [Updating your hosted feature services with ArcGIS Pro and the ArcGIS API for Python](https://www.esri.com/arcgis-blog/products/api-python/analytics/updating-your-hosted-feature-services-with-arcgis-pro-and-the-arcgis-api-for-python/), an ArcGIS blog post by Kevin Hibma.
 
-I found that using the search method on the ContentManagement 
+I found that using the [search method on the ContentManagement class](https://developers.arcgis.com/python/api-reference/arcgis.gis.toc.html?highlight=gis%20content%20search#contentmanager) brought up all kinds of troublesome resuls and developed the iterating-through-two-dictionary-objects process as a solution. Thus far, it's worked like a charm for me. If you come across any issues with this search method, I'd love to hear about them.
