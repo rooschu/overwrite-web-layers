@@ -15,3 +15,4 @@ Schema changes to the published data feature class should not cause any issue wi
 2. Create a new map in your project and add **only one** feature class to the map.
 3. Rename the map with a title that describes the feature class contained within it and **does not contain spaces** (e.g. `TN_Sate_Park_Boundaries`).
 Right-click on the feature class in the Contents pane and choose 
+![Image description](https://raw.githubusercontent.com/rooschu/overwrite-web-layers/master/Instructions-Figure-1.png)
