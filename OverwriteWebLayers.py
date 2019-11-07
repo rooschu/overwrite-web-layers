@@ -28,13 +28,13 @@ prjPath = os.path.join(prjFolder, # Whatever the name of your project is, e.g. "
 portal = "https://www.arcgis.com/" # or use another portal
 user = # Your ArcGIS Online user name
 password = # Probably not "password"
+		       
+# Set sharing settings
+shrOrg = True # Or False
+shrEveryone = True # Or False
+shrGroups = "" # Or list 'em
 
 ############################# END ASSIGNING VARIABLES #############################
-
-# Set sharing settings
-shrOrg = True
-shrEveryone = True
-shrGroups = ""
 
 # Assign name and location for temporary staging files
 tempPath = prjFolder
