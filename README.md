@@ -5,3 +5,6 @@ This workflow allows the user to add or remove published feature classes from th
 
 Schema changes to the published data feature class should not cause any issue with the script or with the newly updated feature layer; however, if a field is removed or renamed, any references to this field in other AGOL objects, such as Web Maps and StoryMaps, may "break."
 ## What you need
+- ArcGIS Pro
+- Python 3.X
+- An ArcGIS Online account with an associated ArcGIS Pro license
