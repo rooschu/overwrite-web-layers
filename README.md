@@ -25,18 +25,18 @@ This script is pretty clear about where parameters needs to reflect your own set
 ############################ BEGIN ASSIGNING VARIABLES ############################
 
 # Set the path to the project
-prjFolder = # path to .aprx
-prjPath = os.path.join(prjFolder, # Whatever the name of your project is, e.g. "WeeklyUpdates.aprx")
+prjFolder = r"C:/GIS/Projects"
+prjPath = os.path.join(prjFolder, ExampleProject.aprx)
 
 # Set login credentials (user name is case sensitive, fyi)
 portal = "https://www.arcgis.com/" # or use another portal
-user = # Your ArcGIS Online user name
-password = # Probably not "password"
+user = User.Name
+password = Password!123
 		       
 # Set sharing settings
-shrOrg = True # Or False
-shrEveryone = True # Or False
-shrGroups = "" # Or list 'em
+shrOrg = # True or False
+shrEveryone = # True or False
+shrGroups = # Leave blank (" ") or list 'em
 
 ############################# END ASSIGNING VARIABLES #############################
 ```
