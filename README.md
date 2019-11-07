@@ -16,4 +16,6 @@ Schema changes to the published data feature class should not cause any issue wi
 2. Create a new map in your project and add **only one** feature class to the map.
 3. Rename the map with a title that describes the feature class contained within it and **does not contain spaces** (e.g. `TN_Sate_Park_Boundaries`).
 4. Right-click on the feature class in the Contents pane and choose *Sharing* -> *Share as Web Layer*. Fill out the tool parameters and hit *Publish*. Give 'er a minute.
-5. 
+
+You've now created a feature layer and corresponding service definition (whose name should match the name of your map) in AGOL. You can repeat these steps for any number of feature classes you wish to publish to AGOL.
+#### Update Python script parameters
