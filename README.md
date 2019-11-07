@@ -41,8 +41,8 @@ shrGroups = # Leave blank (" ") or list 'em
 ############################# END ASSIGNING VARIABLES #############################
 ```
 #### Run the script
-1. Run the script through your favorite IDE using Python 3.X (which comes with your Pro installation)
-2. Set up the script to run periodically in Task Scheduler or equivalent, based on how often your local copies are edited
+1. Run the script through your favorite IDE using Python 3.X (which comes with your Pro installation).
+2. Set up the script to run periodically in Task Scheduler or equivalent, based on how often your local copies are edited.
 ## Credits
 This script was adapted from [Updating your hosted feature services with ArcGIS Pro and the ArcGIS API for Python](https://www.esri.com/arcgis-blog/products/api-python/analytics/updating-your-hosted-feature-services-with-arcgis-pro-and-the-arcgis-api-for-python/), an ArcGIS blog post by Kevin Hibma.
 
