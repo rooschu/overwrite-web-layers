@@ -14,8 +14,32 @@ Schema changes to the published data feature class should not cause any issue wi
 #### Publish the feature to AGOL manually the first time
 1. Create an ArcGIS Pro project dedicated to running this script. Take note of the project name (e.g. `WeeklyUpdates.aprx`) and the folder in which your project is saved (e.g. `C:\ArcGIS\Projects\WeeklyUpdates`)
 2. Create a new map in your project and add **only one** feature class to the map.
-3. Rename the map with a title that describes the feature class contained within it and **does not contain spaces** (e.g. `TN_Sate_Park_Boundaries`).
-4. Right-click on the feature class in the Contents pane and choose *Sharing* -> *Share as Web Layer*. Fill out the tool parameters and hit *Publish*. Give 'er a minute.
+3. Create or review metada for the feature class that will be published; this metadata will cascade to the uploaded service definition.
+4. Rename the map with a title that describes the feature class contained within it and **does not contain spaces** (e.g. `TN_Sate_Park_Boundaries`).
+5. Right-click on the feature class in the Contents pane and choose *Sharing* -> *Share as Web Layer*. Fill out the tool parameters and hit *Publish*. Give 'er a minute.
 
-You've now created a feature layer and corresponding service definition (whose name should match the name of your map) in AGOL. You can repeat these steps for any number of feature classes you wish to publish to AGOL.
+You've now created a feature layer and corresponding service definition (whose name should match the name of your map) in AGOL. You can repeat steps 2-5 for any number of feature classes you wish to publish to AGOL. The script will iterate through every map contained in your project file and try to match it to an AGOL service definition.
 #### Update Python script parameters
+This script is pretty clear about where parameters needs to reflect your own set up, and there aren't many to change. See below.
+```
+############################ BEGIN ASSIGNING VARIABLES ############################
+
+# Set the path to the project
+prjFolder = # path to .aprx
+prjPath = os.path.join(prjFolder, # Whatever the name of your project is, e.g. "WeeklyUpdates.aprx")
+
+# Set login credentials (user name is case sensitive, fyi)
+portal = "https://www.arcgis.com/" # or use another portal
+user = # Your ArcGIS Online user name
+password = # Probably not "password"
+		       
+# Set sharing settings
+shrOrg = True # Or False
+shrEveryone = True # Or False
+shrGroups = "" # Or list 'em
+
+############################# END ASSIGNING VARIABLES #############################
+```
+#### Run the script
+1. Run the script through your favorite IDE using Python 3.X (which comes with your Pro installation)
+2. Set up the script to run periodically in Task Scheduler or equivalent, based on how often your local copies are edited
